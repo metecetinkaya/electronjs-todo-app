@@ -6,11 +6,15 @@ localhost:3001/items
 
 
 // PUT
-localhost:3001/items/1
-{
-    "title": "update test",
-    "order": 1,
-    "completed": true
+localhost:3001/items/
+{ 
+    "filter": {
+        "name": "mete"
+    },
+    "update": {
+        "name": "mete_update",
+        "description": "mete_test_update"
+    } 
 }
 
 // DELETE
