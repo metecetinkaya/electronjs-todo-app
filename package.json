@@ -2,10 +2,13 @@
     "name": "TodoApp",
     "version": "1.0.0",
     "scripts": {
-        "start": "node app.js"
+        "start": "nodemon app.js"
     },
     "dependencies": {
         "cors": "^2.8.5",
-        "express": "^4.17.1"
+        "electron": "^20.0.1",
+        "express": "^4.17.1",
+        "mongoose": "^6.5.1",
+        "nodemon": "^2.0.19"
     }
 }
