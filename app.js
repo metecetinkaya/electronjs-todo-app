@@ -20,16 +20,6 @@ app.use('/', (req, res) => res.send('TodoApp - Metehan Cetinkaya'));
 const server = http.createServer(app);
 const port = 3001;
 
+
 server.listen(port);
 console.debug(`Server listening on port ${ port }`);
-
-
-
-
-
-// require('./database')
-
-// const { createWindow } = require('./frontend/main');
-// const { app } = require('electron');
-
-// app.whenReady().then(createWindow);
