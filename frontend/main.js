@@ -14,7 +14,6 @@ function createWindow() {
     win.loadFile('frontend/index.html');
 }
 
-/*
 ipcMain.on('new-task', async (e, arg) => {
     const newTask = new Task(arg);
     const taskSaved = await newTask.save();
@@ -42,7 +41,7 @@ ipcMain.on('update-task', async (e, args) => {
         }
     );
     e.reply('update-task-success', JSON.stringify(updatedTask));
-});*/
+});
 
 module.exports = {
     createWindow
