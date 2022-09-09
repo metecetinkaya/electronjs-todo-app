@@ -23,7 +23,7 @@ function createServer() {
 
 function createWindow() {
     const window = new BrowserWindow({
-        width: 700,
+        width: 800,
         height: 900,
         webPreferences: {
             nodeIntegration: true,
