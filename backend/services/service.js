@@ -30,7 +30,9 @@ class Service {
                 create: new Date()
             });
 
-            console.log(`A todo was created with the id: ${item.id}`);
+            console.log(`Item Created - Id: ${item.id}`);
+
+            return item;
         } catch (err) {
             throw Error(`Error while Creating Todo: ${err}`)
         }
@@ -38,11 +40,13 @@ class Service {
 
     async item_update (request) {
         try {
-            const updated_id = request.id;
+            await Items.findOneAndUpdate(request.id, request)
 
-            const item = await Items.findOneAndUpdate(updated_id, request)
+            const item = await Items.findOne({id: request.id});
 
-            console.log(`A document was updated with the _id: ${item.id}`);
+            console.log(`Item Updated - Id: ${item.id}`);
+
+            return item;
         } catch (err) {
             throw Error(`Error while Updating Todo: ${err}`)
         }
@@ -52,7 +56,9 @@ class Service {
         try {
             const item = await Items.findOneAndDelete(request)
 
-            console.log(`A document was deleted with the _id: ${item.id}`);
+            console.log(`Item Deleted - Id: ${item.id}`);
+
+            return item;
         } catch (err) {
             throw Error(`Error while Deleting Todo: ${err}`)
         }

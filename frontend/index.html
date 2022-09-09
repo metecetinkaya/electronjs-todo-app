@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electron & Mongodb CRUD</title>
-    <link rel="stylesheet" href="ui/app.css">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
 <body>
-    <h1>Electron & Mongo App</h1>
+    <h1 class="header">Todo List App</h1>
 
-    <form id="taskForm" class="card">
-        <input type="text" id="taskName" placeholder="Task's Name" autofocus>
-        <textarea id="taskDescription" rows="3" placeholder="Task's Description" autofocus></textarea>
+    <form id="form" class="main-card">
+        <input type="text" id="title" placeholder="Title" autofocus>
+        <textarea id="description" rows="3" placeholder="Description" autofocus></textarea>
         <button type="submit" class="btn btn-secondary">
             Save
         </button>
     </form>
 
     <!-- Task List -->
-    <ul id="taskList"></ul>
-
-    <script src="ui/app.js"></script>
+    <ul id="list"></ul>
+    <script src="./events.js"></script>
 </body>
 
 </html>

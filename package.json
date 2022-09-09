@@ -2,9 +2,10 @@
     "name": "TodoApp",
     "version": "1.0.0",
     "scripts": {
-        "start": "nodemon app.js"
+        "start": "electron app.js"
     },
     "dependencies": {
+        "axios": "^0.27.2",
         "cors": "^2.8.5",
         "electron": "^20.0.1",
         "express": "^4.17.1",

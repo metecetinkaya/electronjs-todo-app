@@ -1,21 +1,21 @@
-//POST
-localhost:3001/items
+// GET
+{
+    "id": 1,
+}
+
+// POST
 {
     "title": "new"
 }
 
-
 // PUT
-localhost:3001/items/
 { 
-    "filter": {
-        "name": "mete"
-    },
-    "update": {
-        "name": "mete_update",
-        "description": "mete_test_update"
-    } 
+    "title": "update_title",
+    "description": "update_description"
 }
 
 // DELETE
-localhost:3001/items/3
+{ 
+    "id": 3,
+    "title": "deleted_item"
+}
